@@ -1,0 +1,151 @@
+{
+  "runs": [
+    {
+      "id": "1",
+      "name": "Documentation Audit",
+      "repository": "runforge/docs",
+      "branch": "main",
+      "status": "queued",
+      "createdAt": "2026-11-22T18:00:00+03:00",
+      "logs": [
+        "Run added to the queue.",
+        "Waiting for an available agent."
+      ]
+    },
+    {
+      "id": "2",
+      "name": "API Regression Check",
+      "repository": "acme/api-service",
+      "branch": "feature/payments",
+      "status": "running",
+      "createdAt": "2026-11-22T17:45:12+03:00",
+      "durationSeconds": 124,
+      "logs": [
+        "Starting API regression suite.",
+        "Executing integration tests.",
+        "Starting API regression suite.",
+        "Executing integration tests.",
+        "Starting API regression suite.",
+        "Executing integration tests.",
+        "Starting API regression suite.",
+        "Executing integration tests.",
+        "Starting API regression suite.",
+        "Executing integration tests."
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Frontend Smoke Test",
+      "repository": "acme/dashboard",
+      "branch": "develop",
+      "status": "succeeded",
+      "createdAt": "2026-11-22T17:20:45+03:00",
+      "durationSeconds": 86,
+      "logs": [
+        "Dependencies installed.",
+        "Build completed successfully.",
+        "Smoke tests passed."
+      ],
+      "result": "18 checks passed with no failures."
+    },
+    {
+      "id": "4",
+      "name": "Security Dependency Scan",
+      "repository": "runforge/platform",
+      "branch": "security/upgrade",
+      "status": "failed",
+      "createdAt": "2026-11-22T16:58:30+03:00",
+      "durationSeconds": 213,
+      "logs": [
+        "Loading dependency graph.",
+        "Detected 3 vulnerable packages.",
+        "Scan exited with code 1."
+      ],
+      "result": "The scan found 3 high-severity vulnerabilities."
+    },
+    {
+      "id": "5",
+      "name": "Data Quality Validation",
+      "repository": "acme/data-pipeline",
+      "branch": "main",
+      "status": "succeeded",
+      "createdAt": "2026-11-22T15:42:10+03:00",
+      "durationSeconds": 354,
+      "logs": [
+        "Validating 42 datasets.",
+        "Schema checks passed.",
+        "Completeness report generated."
+      ],
+      "result": "All data quality checks passed."
+    },
+    {
+      "id": "6",
+      "name": "Release Notes Generator",
+      "repository": "runforge/agents",
+      "branch": "release/v2",
+      "status": "queued",
+      "createdAt": "2026-11-22T15:10:00+03:00",
+      "logs": [
+        "Release notes run queued.",
+        "Awaiting repository checkout."
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Image Optimizer",
+      "repository": "acme/marketing-site",
+      "branch": "perf/images",
+      "status": "running",
+      "createdAt": "2026-11-22T14:36:22+03:00",
+      "durationSeconds": 67,
+      "logs": [
+        "Scanning public image assets.",
+        "Optimizing WebP variants."
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Deploy Preview",
+      "repository": "acme/storefront",
+      "branch": "feature/checkout",
+      "status": "failed",
+      "createdAt": "2026-11-22T13:55:18+03:00",
+      "durationSeconds": 191,
+      "logs": [
+        "Deploying preview environment.",
+        "Health check failed.",
+        "Rolled back deployment."
+      ],
+      "result": "Preview deployment failed at the health-check stage."
+    },
+    {
+      "id": "9",
+      "name": "Accessibility Review",
+      "repository": "acme/web-client",
+      "branch": "main",
+      "status": "succeeded",
+      "createdAt": "2026-11-22T12:25:05+03:00",
+      "durationSeconds": 145,
+      "logs": [
+        "Opened the application in headless Chromium.",
+        "Ran accessibility rules.",
+        "Generated review report."
+      ],
+      "result": "No critical accessibility violations found."
+    },
+    {
+      "id": "10",
+      "name": "Test Coverage Report",
+      "repository": "runforge/sdk",
+      "branch": "develop",
+      "status": "running",
+      "createdAt": "2026-11-22T11:48:51+03:00",
+      "durationSeconds": 98,
+      "logs": [
+        "Running unit tests.",
+        "Collecting coverage metrics.",
+        "Preparing final report."
+      ]
+    }
+  ]
+}
